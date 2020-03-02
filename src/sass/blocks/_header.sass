@@ -1,7 +1,11 @@
 nav
+    width: 100%
+    position: fixed 
     margin-top: 55px
+    height: 65px
+    z-index: 5
 header
-    position: relative
+    background-color: rgba(0, 0, 0, 0.5)
     .flag
         display: flex
         justify-content: space-between
@@ -15,18 +19,24 @@ header
         &__link
             margin-left: 11px
             a 
-                color: #242424
+                color: #fff
         &__country
             font-size: 14px
             line-height: 18px
             font-weight: 700
-            color: #242424
+            color: #fff
         &__phone
             font-size: 12px
             font-weight: 300
+            &:hover
+                text-decoration: none
+                color: $main-color
         &__email
             font-size: 12px
             font-weight: 300
+            &:hover
+                text-decoration: none
+                color: $main-color
     .logo
         display: flex
         justify-content: space-between

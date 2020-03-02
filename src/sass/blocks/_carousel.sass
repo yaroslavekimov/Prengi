@@ -1,0 +1,56 @@
+.carousel
+    position: relative
+    width: 360px
+    height: 550px
+    margin-left: 240px
+    &__item
+        margin-left: 5px
+        width: 320px
+        height: 500px
+        img 
+            width: 100%
+            height: 550px
+    .slick-prev, .slick-next
+        position: absolute
+        bottom: 38px
+        left: -180px
+        width: 6px
+        height: 10px
+        border: none
+        background-color: rgba(255, 255, 255, 0)
+        z-index: 4
+        img
+            width: 6px
+            height: 10px
+    .slick-next
+        right: 439px
+        left: auto
+        img
+            width: 6px
+            height: 10px
+    ul 
+        margin: 0
+        padding: 0
+        position: absolute
+        left: -160px
+        bottom: 41px
+        z-index: 3
+        li 
+            width: 11px
+            height: 11px
+            margin: 0 1.5px
+    .slick-dots
+        display: none
+        display: flex
+        list-style-type: none
+        button
+            padding: 0
+            width: 11px
+            height: 100%
+            border: 1px solid #ffffff
+            font-size: 0px
+            color: rgba(0, 0, 0, 0)
+            background-color: rgba(0, 0, 0, 0)
+            border-radius: 100%
+            &:hover
+                background-color: #ffffff

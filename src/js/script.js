@@ -2,9 +2,10 @@ $(document).ready(function(){
     $('.carousel__item').slick({
         speed: 1200,
         adaptiveHeight: false,
-        autoplay: true,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icon/reviews/reviews_prew.svg"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icon/reviews/reviews_next.svg"></button>',
+        dots: true,
+        autoplay: false,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icon/promo/prev.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icon/promo/next.png"></button>',
         responsive: [
             {
                 breakpoint: 992,
