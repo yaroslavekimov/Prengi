@@ -1,0 +1,35 @@
+.expert
+    min-height: 890px
+    padding: 79px 0 61px 0
+    background: url(../bg/expert_bg.jpg) center center/cover no-repeat
+    &__tabs
+        display: block
+        margin: 0 auto
+        margin-top: 25px
+        padding: 0 33px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 800px
+        height: 64px
+        border: 1.0px solid #ffffff
+        border-radius: 5px
+    &__tab
+        list-style-type: none
+        font-size: 14px
+        line-height: 25px
+        font-weight: 400
+        color: #ffffff
+        padding: 0 16px
+        cursor: pointer
+        border-right: 1px solid #ffffff
+        transition: 0.5s all
+        &:nth-child(6)
+            border-right: none
+    &__content
+        margin-top: 36px
+        display: none
+        justify-content: center
+        align-items: center
+        &_active 
+            display: flex
