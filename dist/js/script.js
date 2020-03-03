@@ -42,74 +42,35 @@ $(document).ready(function(){
           .closest('div.container').find('div.expert__content').removeClass('expert__content_active').eq($(this).index()).addClass('expert__content_active');
     });
 
-
-
-
-
-
-
-
-
     // MODAL
 
-    // $('[data-modal=consultation]').on('click', function() {
-    //     $('.overlay, #consultation').fadeIn('slow');
-    // });
-    // $('.modal__close').on('click', function() {
-    //     $('.overlay, #consultation, #thanks').fadeOut('slow');
-    // });
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #thanks').fadeOut('slow');
+    });
 
     // Маска ввода
 
-    // $('input[name=phone]').mask("+7 (999) 999-99-99");
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
 
-    // $('#cons-mod').submit(function(e) {
-    //     e.preventDefault();
-    //     $.ajax({
-    //         type: "POST",
-    //         url: "mailer/smart.php",
-    //         data: $(this).serialize()
-    //     }).done(function() {
-    //         $(this).find("input").val("");
-    //         $('#consultation').fadeOut();
-    //         $('.overlay, #thanks').fadeIn('slow');
+    $('#form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
 
-    //         $('form').trigger('reset');
-    //     });
-    //     return false;
-    // });
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 
-    // $('#cons-form').submit(function(e) {
-    //     e.preventDefault();
-    //     $.ajax({
-    //         type: "POST",
-    //         url: "mailer/smart.php",
-    //         data: $(this).serialize()
-    //     }).done(function() {
-    //         $(this).find("input").val("");
-    //         $('.overlay, #thanks').fadeIn('slow');
-
-    //         $('form').trigger('reset');
-    //     });
-    //     return false;
-    // });
-    
-    // $('#questions_form').submit(function(e) {
-    //     e.preventDefault();
-    //     $.ajax({
-    //         type: "POST",
-    //         url: "mailer/smart.php",
-    //         data: $(this).serialize()
-    //     }).done(function() {
-    //         $(this).find("input").val("");
-    //         $('.overlay, #thanks').fadeIn('slow');
-
-    //         $('form').trigger('reset');
-    //     });
-    //     return false;
-    // });
-
-    
 // // Smooth scroll and pageup
 
     $(window).scroll(function() {

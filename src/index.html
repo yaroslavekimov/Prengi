@@ -82,7 +82,7 @@
                     <h1 class="promo__header">Управляй своим бизнесом <br> через Smartphone</h1>
                     <h2 class="promo__subheader"><span>PRENGI</span> - Платформа для прозрачного <br>
                     управления бизнесом</h2>
-                    <button class="button">Получить доступ</button>
+                    <button data-modal="consultation" class="button">Получить доступ</button>
                 </div>
                 <div class="carousel">
                     <div class="carousel__item">
@@ -224,7 +224,7 @@
                 </div>
                 <div class="communication__head">Приступить очень просто! <br>
                     Нужно получить доступ и начать работу!</div>
-                <button class="button">связаться с нами</button>
+                <button data-modal="consultation" class="button">связаться с нами</button>
             </div>
         </div>
     </section>
@@ -288,6 +288,24 @@
             <div class="footer__link"><a href="#">© Prengi Ink. 2008-2017 Все права защищены.</a></div>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div id="consultation" class="modal">
+            <div class="modal__close">&times;</div>
+            <h2 class="modal__subtitle">Заполните форму</h2>
+            <form id="form" action="#" class="feed__form">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон" type="tel">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <button class="button button__modal">Отправить</button>
+            </form>
+        </div>
+        <div id="thanks" class="modal modal__mini">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subheader">Спасибо за вашу заявку!</div>
+            <div class="modal__desc">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </div>
 
     <a href="#up" class="pageup">
         <img src="icon/up.svg" alt="up">
