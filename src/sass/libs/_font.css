@@ -5,7 +5,7 @@
         url('../fonts/Roboto-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
-    font-display: auto;
+    font-display: swap;
 }
 
 @font-face {
@@ -15,7 +15,7 @@
         url('../fonts/Roboto-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
-    font-display: auto;
+    font-display: swap;
 }
 
 @font-face {
@@ -25,7 +25,7 @@
         url('../fonts/Roboto-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
-    font-display: auto;
+    font-display: swap;
 }
 
 @font-face {
@@ -35,5 +35,5 @@
         url('../fonts/Roboto-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
-    font-display: auto;
+    font-display: swap;
 }

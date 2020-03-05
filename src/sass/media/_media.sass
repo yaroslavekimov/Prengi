@@ -93,6 +93,110 @@
             a 
                 font-size: 10px
                 line-height: 14px
-// @media (max-width: 767px)    
-    
+@media (max-width: 767px)
+    .promo__header
+        font-size: 30px
+        width: 100%
+    nav
+        width: 100%
+        .menu
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            top: 0
+            right: -100%
+            width: 70%
+            height: 100vh
+            padding: 20px 15px
+            background-color: rgba(18, 143, 201, 0.7)
+            box-shadow: 2px 2px 50px #ffffff
+            transition: 1s all
+            &_active 
+                right: 0
+            &_item 
+                padding-right: 0
+                border: none
+                margin: 10px 0
+            &_link 
+                font-size: 20px
+        .hamburger
+            display: block
+            position: absolute
+            right: 30px
+            top: 50%
+            transform: translateY(-50%)
+            width: 26px
+            height: 12px
+            span 
+                display: block 
+                height: 2px
+                width: 100%
+                background-color: $main-color
+                margin-bottom: 2px
+                transition: 0.5cs all
+            &_active 
+                span 
+                    margin-bottom: -2px 
+                    &:nth-child(1)
+                        transform: translateY(3px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: translateY(3px) rotate(45deg)
+    .prengi
+        min-height: 1500px
+        &__item
+            margin-top: 10px
+            width: 220px
+            height: 240px 
+            &:nth-child(1)
+                margin-top: 10px  
+            &:nth-child(3)
+                margin-top: 10px 
+        &__wrapper
+            justify-content: center
+            flex-wrap: wrap
+    .title
+        font-size: 25px
+        width: 100%
+    .expert
+        min-height: 520px
+        &__tabs
+            width: 503px
+            height: 50px
+        &__tab
+            text-align: center
+            font-size: 10px
+            line-height: 14px
+            border-right: none
+        &__content
+            width: 500px
+            height: 200px
+            img
+                width: 80%
+    .adventage
+        min-height: 900px
+        &__item
+            margin-top: 20px
+    .variations
+        min-height: 440px
+        &__wrapper
+            margin-top: 55px
+        &__head
+            font-size: 14px
+        &__desc
+            font-size: 10px
+            line-height: 15px
+    .communication__head
+        margin: 0
+        font-size: 20px
+    .footer
+        min-height: 400px
+        &__menu
+            margin-right: 15px
+        &__list
+            margin-right: 5px      
+        &__header
+            margin-bottom: 15px
 // @media (max-width: 575px) 
